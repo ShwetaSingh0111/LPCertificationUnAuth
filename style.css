@@ -151,7 +151,7 @@ header {
   border-radius: 50%;
   position: absolute;
   top: 10;
-  right: 100px;
+  right: 180px;
 }
 
 .cartRate {
@@ -171,9 +171,9 @@ header {
 }
 
 .LoginButton {
-  background-color: #1a73e8;
+  background-color: steelblue;
   border-radius: 5%;
-  border: 1px solid #1a73e8;
+  border: 1px solid steelblue;
   color: white;
   padding: 8px 17px;
   text-align: center;
@@ -181,4 +181,13 @@ header {
   font-size: 20px;
   margin: 10px 40px 10px 465px;
   cursor: pointer;
+}
+.CartTotalDisplay{
+  
+  position:absolute;
+  right: 170px;
+  top:8;
+}
+.CartImg{
+  height: 150px;
 }
