@@ -37,11 +37,14 @@
         onclick="window.location.href = 'https://shwetasingh0111.github.io/LPCertificationAuth/';">
         Login
       </button>
-      <span class="cartRate"> Cart Total </span>
+      <!--<span class="cartRate"> Cart Total </span>-->
+      <span class="CartTotalDisplay">
+        <img class="CartImg" src="img/cart.png" title="Cart Total">
+      </span>
       <span id='cartValue'>0</span>
       <span id="totalCost">0</span> <!--HIDDEN-->
       <input id="totalCost" type="hidden" name="totalCost" value="0">
-      <i class='bx bx-shopping-bag' id="cart-icon"></i>
+     
     </div>
 
   </header>
@@ -54,14 +57,14 @@
       <div class="product-box">
         <img src="img/product1.png" alt="" class="product-img">
         <h2 class="product-title">Meluha</h2>
-        <span class="price"> ₹ 300</span>
+        <span class="price"> ₹ 900</span>
         <p><button id="addToCart1">Add to Cart</button></p>
       </div>
       <!--Box-2-->
       <div class="product-box">
         <img src="img/product2.png" alt="" class="product-img">
         <h2 class="product-title">The Secret</h2>
-        <span class="price"> ₹ 400</span>
+        <span class="price"> ₹ 600</span>
         <p><button id="addToCart2">Add to Cart</button></p>
       </div>
       <!--Box-3-->
@@ -69,14 +72,14 @@
       <div class="product-box">
         <img src="img/product3.png" alt="" class="product-img">
         <h2 class="product-title">You Can Win</h2>
-        <span class="price"> ₹ 200</span>
+        <span class="price"> ₹ 400</span>
         <p><button id="addToCart3">Add to Cart</button></p>
       </div>
       <!--Box-4-->
       <div class="product-box">
         <img src="img/product4.png" alt="" class="product-img">
         <h2 class="product-title">Inner Engineering</h2>
-        <span class="price"> ₹ 700</span>
+        <span class="price"> ₹ 500</span>
         <p><button id="addToCart4">Add to Cart</button></p>
       </div>
     </div>
@@ -125,7 +128,7 @@
 
         console.log("CostVALUE" + totalCostElement.innerHTML);
         var currentCostValue = parseInt(totalCostElement.innerHTML);
-        var newtotalCost = currentCostValue + 300000;
+        var newtotalCost = currentCostValue + 900;
         totalCostElement.innerHTML = newtotalCost;
         myFunctionSelect();
       });
@@ -138,7 +141,7 @@
 
         console.log("CostVALUE" + totalCostElement.innerHTML);
         var currentCostValue = parseInt(totalCostElement.innerHTML);
-        var newtotalCost = currentCostValue + 400000;
+        var newtotalCost = currentCostValue + 600;
         totalCostElement.innerHTML = newtotalCost;
         myFunctionSelect();
       });
@@ -151,7 +154,7 @@
 
         console.log("CostVALUE" + totalCostElement.innerHTML);
         var currentCostValue = parseInt(totalCostElement.innerHTML);
-        var newtotalCost = currentCostValue + 200000;
+        var newtotalCost = currentCostValue + 400;
         totalCostElement.innerHTML = newtotalCost;
         myFunctionSelect();
       });
@@ -164,7 +167,7 @@
 
         console.log("CostVALUE" + totalCostElement.innerHTML);
         var currentCostValue = parseInt(totalCostElement.innerHTML);
-        var newtotalCost = currentCostValue + 700000;
+        var newtotalCost = currentCostValue + 500;
         totalCostElement.innerHTML = newtotalCost;
         myFunctionSelect();
       });
